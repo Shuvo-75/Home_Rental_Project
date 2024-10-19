@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #007bff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Main content styles */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul.property-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items */
+}
+
+.property-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px; /* Fixed width for property cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth transition */
+}
+
+.property-item:hover {
+    transform: translateY(-5px); /* Raise the item on hover */
+}
+
+.property-item img {
+    max-width: 100%; /* Make sure images are responsive */
+    border-radius: 8px;
+}
+
+.property-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.property-item p {
+    margin-bottom: 5px;
+}
+.book-button {
+    display: inline-block; /* Make it behave like a button */
+    padding: 10px 20px; /* Add some padding */
+    margin-top: 10px; /* Space above the button */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.book-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
